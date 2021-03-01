@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </head>
+  <body class="overflow-hidden">
+    <button id="btn" type="button" class="btn btn-primary position-absolute mt-5 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Get Graph Input
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Graph Inputs</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="modal-body" class="modal-body">
+            <div>
+              <h4>Adjacency List</h4>
+              <samp data-clipboard-text="[[],[0]]" class="clip" data-toggle="tooltip" data-placement="top" title="Copy to Clipboard" id="adj">[[],[0]]</samp>
+              <hr>
+            </div>
+            <div>
+              <h4>Edges</h4>
+              <samp id="edges" data-clipboard-text="[[],[0]]" class="clip" data-toggle="tooltip" data-placement="top" title="Copy to Clipboard">[[],[0]]</samp>
+              <hr>
+            </div>
+            <div>
+              <h4>Matrix</h4>
+              <samp data-clipboard-text="[[],[0]]" class="clip" data-toggle="tooltip" data-placement="top" title="Copy to Clipboard" id="matrix">[[],[0]]</samp>
+              <hr>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/LingDong-/q5xjs/q5.min.js"></script>
+    <script src="/test-case-maker.e31bb0bc.js"></script>
+  </body>
+</html>
