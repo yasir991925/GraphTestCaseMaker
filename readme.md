@@ -18,8 +18,8 @@ This is a simple application for those who are frustrated 🔥 writing test-case
 
 **Screenshots**
 
-![Home](./images/home.png?raw=true "Home")
-![Graph Inputs](./images/Inputs.png?raw=true "Input")
+![Home](https://github.com/yasir991925/GraphTestCaseMaker/blob/main/Images/Home.png)
+![Graph Inputs](https://github.com/yasir991925/GraphTestCaseMaker/blob/main/Images/Inputs.png)
 
 <hr>
 <br>
