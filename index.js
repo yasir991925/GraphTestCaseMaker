@@ -9,6 +9,35 @@ let start_node = null;
 let end_node = null;
 const button = document.querySelector("#btn");
 const modalBody = document.querySelector("#modal-body");
+const btnParan = document.querySelector("#paran-btn");
+const btnBrack = document.querySelector("#brack-btn");
+
+let current = "["
+let current_close = "]"
+
+const changeBType = (o,c) => {
+	document.querySelectorAll(".clip")
+	.forEach(x => {
+		const temp = x.innerText.replaceAll(current, o).replaceAll(current_close, c)
+		x.innerText = temp
+	})
+}
+
+
+btnParan.addEventListener("click", (e) => {
+	changeBType("{", "}")
+	current = "{"
+	current_close = "}"
+})
+
+btnBrack.addEventListener("click", (e) => {
+	changeBType("[", "]")
+	current = "["
+	current_close = "]"
+})
+
+
+
 
 button.addEventListener("click", (e) => {
   const [adjList, edges, matrix] = G.getGraph();
